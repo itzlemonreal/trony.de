@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | StarDays</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Oswald', sans-serif;
+            position: relative;
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+        .nav {
+            margin-left: 20px;
+            display: flex;
+            gap: 15px;
+            position: relative;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 500;
+            font-variant: small-caps;
+            transition: color 0.3s;
+            position: relative;
+        }
+        .nav a:hover {
+            color: #007BFF;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+            white-space: nowrap;
+        }
+        .dropdown a {
+            display: block;
+            color: #333;
+            padding: 8px 12px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .dropdown a:hover {
+            background-color: #f0f0f0;
+            color: #007BFF;
+        }
+        .nav-item {
+            position: relative;
+        }
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="https://www.stussy.com/cdn/shop/files/Stussy-Tbone---Image-6.jpg?v=1721899098&width=1920" width="550" alt="Background Image">
+    </h1>
+    <div class="header">
+        <img src="https://t4.ftcdn.net/jpg/05/15/29/73/360_F_515297365_ZjTzoXsd9PMvALKjthHipkeDMRxHTGJ2.jpg" alt="Logo" class="logo">
+        <div class="nav">
+            <div class="nav-item">
+                <a href="#shop">shop</a>
+                <div class="dropdown">
+                    <a href="tees">tees</a>
+                    <a href="shorts">shorts</a>
+                    <a href="all">all</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#features">features</a>
+            </div>
+            <div class="nav-item">
+                <a href="#support">support</a>
+                <div class="dropdown">
+                    <a href="#support1">customer support</a>
+                    <a href="#support2">account</a>
+                    <a href="#support3">shipping</a>
+                </div>
+            </div>
